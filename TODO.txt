@@ -1,0 +1,30 @@
+Main:
+~ build templates:
+  ~ source listing
+	- add source
+	- edit source
+  - Recipe View
+      - scale ingredients to double/half/etc recipe
+  - Recipe Edit
+	- add source
+	- add ingredient
+    (look at polls vote post --> vote view)
+  - Recipe search
+	1) drop down field per ingredient (JS button to add field)
+	2) can search box be aware of (a, b, c) in conjunction with ingredient list?
+
+Misc:
+- how do I not hardcode a background image in the template files.
+   ?--> {% extends "base.html %}
+
+
+======================================================
+I need a better way to specify background image:
+
+<html>
+<link rel="stylesheet" href="{{ STATIC_URL }}rbook.css" type="text/css">
+
+<!--  not sure how to reference image from within *.css file --!>
+<style>
+  body { background-image: url({{ STATIC_URL }}FeatherTexture.bmp) }
+</style>
