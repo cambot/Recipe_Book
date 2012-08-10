@@ -9,7 +9,7 @@ class Source(models.Model):
     def __unicode__(self):
    	 return self.name
 
-class Recipie(models.Model):
+class Recipe(models.Model):
     name = models.CharField(max_length=100)
     notes = models.TextField(max_length=200, blank=True)
     #
@@ -28,7 +28,7 @@ class Ingredient(models.Model):
    	 return self.name
 
 class IngredientList(models.Model):
-    recipie = models.ForeignKey(Recipie)
+    recipe = models.ForeignKey(Recipe)
     ingredient = models.ForeignKey(Ingredient)
     quantaty = models.CharField(max_length=50)  #should be qt + Units?  , sp: quantity
 	
