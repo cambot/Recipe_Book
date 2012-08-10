@@ -1,0 +1,23 @@
+<html>
+<link rel="stylesheet" href="{{ STATIC_URL }}rbook.css" type="text/css">
+
+<!--  not sure how to reference image from within *.css file --!>
+<style>
+  body { background-image: url({{ STATIC_URL }}SantaFeStucco.bmp) }
+</style>
+
+<body>
+{% if source_list %}
+  <h1> List of my sources </h1>
+	<ul>
+	{% for source in source_list %}
+  	{% if source.url != "n/a" %} <li><a href="{{ source.url }}">{{ source.name }}</a></li>
+  	{% else %} <li>{{ source.name }}</li>
+  	{% endif %}
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>No sources are available.</p>
+{% endif %}
+</body>
+</html>

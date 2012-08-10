@@ -1,0 +1,23 @@
+<href>
+<link rel="stylesheet" href="{{ STATIC_URL }}rBook.css" type="text/css">
+
+<!--  not sure how to reference image from within *.css file --!>
+<style>
+  body { background-image: url({{ STATIC_URL }}FeatherTexture.bmp) }
+</style>
+
+<body>
+{% if recipe_list %}
+  <h1> List of my recipes</h1>
+	<ul>
+	{% for recipe in recipe_list %}
+    	<li><a href="/RecipeBook/{{ recipe.id }}/">{{ recipe.name }}</a></li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>No recipes are available.</p>
+{% endif %}
+<a href="/RecipeBook/sources">source listing</a>
+
+</body>
+</html>

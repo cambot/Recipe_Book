@@ -1,0 +1,44 @@
+body { 
+	background: #eee;
+	/* background-image: url(FeatherTexture.bmp) */
+	width: 75%;
+}
+p.source { color: navy; }
+p.notes { 
+	border: 1px solid black;
+	background: yellow;
+	padding: .4em;
+	margin: 1em;
+	width: 100%;
+}
+
+
+  nav ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+	float: left;
+	width: 100%;
+	align: center;
+    }
+  nav ul li {
+	/** book says this should overcome wierd padding in IE **/
+	/** however, I don't see any impact on IE8 **/
+	dispay: inline;
+	float: left;
+    }
+  nav a {
+	/** float: left; - does not completely work in IE8 **/
+	/** IE adds extra pading witih Display: Block unless width is included **/ 
+	display: block;
+	text-decoration: none;
+	background: #386;
+	color: #fff;
+	padding: .2em 1em;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+    }
+  nav a:hover, ul#navigation a:active {
+	background: #69c;
+	color: #000;
+    }

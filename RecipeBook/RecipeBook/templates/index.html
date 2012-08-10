@@ -1,0 +1,18 @@
+<html>
+<link rel="stylesheet" href="{{ STATIC_URL }}rbook.css" type="text/css">
+
+<!--  not sure how to reference image from within *.css file --!>
+<style>
+  body { background-image: url({{ STATIC_URL }}IMG_2672.jpg); background-size=100% }
+</style>
+
+<body>
+<h1> My Recipe book </h1>
+<nav><ul>
+  <li><a href="/RecipeBook/listing">Recipe List</a> </li>
+  <li><a href="/RecipeBook/sources">Source List</a> </li>
+  <li><a href="/RecipeBook/search">Search for Recipe</a> </li>
+</ul></nav>
+
+</body>
+</html>
