@@ -150,7 +150,8 @@
     "pk": 1,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "6",
+      "units": "",
+      "quantity": "6",
       "recipe": 1,
       "ingredient": 1
     }
@@ -159,7 +160,8 @@
     "pk": 2,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "1 tsp",
+      "units": "tsp",
+      "quantity": "1",
       "recipe": 1,
       "ingredient": 2
     }
@@ -168,7 +170,8 @@
     "pk": 3,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "pinch",
+      "units": "pinch",
+      "quantity": "1",
       "recipe": 1,
       "ingredient": 3
     }
@@ -177,7 +180,8 @@
     "pk": 4,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "3 Tbsp",
+      "units": "Tbsp",
+      "quantity": "3",
       "recipe": 1,
       "ingredient": 4
     }
@@ -186,7 +190,8 @@
     "pk": 5,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "2/3 cup",
+      "units": "cup",
+      "quantity": "2/3",
       "recipe": 2,
       "ingredient": 5
     }
@@ -195,7 +200,8 @@
     "pk": 6,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "1 1/2 cup",
+      "units": "cup",
+      "quantity": "1 1/2",
       "recipe": 2,
       "ingredient": 6
     }
@@ -204,7 +210,8 @@
     "pk": 7,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "1/4 tsp",
+      "units": "tsp",
+      "quantity": "1/4",
       "recipe": 2,
       "ingredient": 3
     }
@@ -213,7 +220,8 @@
     "pk": 8,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "1 cup",
+      "units": "cup",
+      "quantity": "1",
       "recipe": 2,
       "ingredient": 8
     }
@@ -222,7 +230,8 @@
     "pk": 9,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "1/3 cup",
+      "units": "cup",
+      "quantity": "1/3",
       "recipe": 2,
       "ingredient": 9
     }
@@ -231,7 +240,8 @@
     "pk": 10,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "6 yolks",
+      "units": "yolks",
+      "quantity": "6",
       "recipe": 3,
       "ingredient": 10
     }
@@ -240,7 +250,8 @@
     "pk": 11,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "1/4 cup",
+      "units": "cup",
+      "quantity": "1/4",
       "recipe": 3,
       "ingredient": 6
     }
@@ -249,7 +260,8 @@
     "pk": 12,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "2 tbsp",
+      "units": "tbsp",
+      "quantity": "2",
       "recipe": 3,
       "ingredient": 11
     }
@@ -258,7 +270,8 @@
     "pk": 13,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "2/3 cup",
+      "units": "cup",
+      "quantity": "2/3",
       "recipe": 3,
       "ingredient": 12
     }
@@ -267,7 +280,8 @@
     "pk": 14,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "1 tsp",
+      "units": "tsp",
+      "quantity": "1",
       "recipe": 3,
       "ingredient": 13
     }
@@ -276,7 +290,8 @@
     "pk": 15,
     "model": "RecipeBook.ingredientlist",
     "fields": {
-      "quantaty": "1/2 recipe",
+      "units": "recipe",
+      "quantity": "1/2",
       "recipe": 3,
       "ingredient": 14
     }

@@ -44,7 +44,7 @@ function compute(){
 
 <ul>
 {% for ingredientListItem in recipe.ingredientlist_set.all %}  {# table_set forced to lower case? #}
-    <li> {{ ingredientListItem.ingredient.name }}: {{ ingredientListItem.quantaty }} {{ ingredientListItem.units }} </li>
+    <li> {{ ingredientListItem.ingredient.name }}: {{ ingredientListItem.quantity }} {{ ingredientListItem.units }} </li>
 {% endfor %}
 </ul>
 
@@ -52,9 +52,9 @@ function compute(){
  <tr> <th> Ingredient </th><th colspan=2> Quantity </th> <th colspan=2> Rescaled</th> </tr>
 {% for ingredientListItem in recipe.ingredientlist_set.all %}
  <tr> <td> {{ ingredientListItem.ingredient.name }} </td>
-      <td> {{ ingredientListItem.quantaty }} </td>
+      <td> {{ ingredientListItem.quantity }} </td>
       <td> {{ ingredientListItem.units }} </td>
-      <td> {{ ingredientListItem.quantaty }} </td>
+      <td> {{ ingredientListItem.quantity }} </td>
       <td> {{ ingredientListItem.units }} </td>
  </tr>
 {% endfor %}

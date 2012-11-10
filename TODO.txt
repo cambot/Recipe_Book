@@ -1,13 +1,10 @@
 Main:
-- Data model:
-  - add discrete field for units
-
-~ build templates:
-  ~ source listing
+- build templates:
+  - source listing
 	- add source
 	- edit source
   - Recipe View
-      - scale ingredients to double/half/etc recipe
+      - convert units during scaling
   - Recipe Edit
 	- add source
 	- add ingredient

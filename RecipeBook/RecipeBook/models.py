@@ -30,6 +30,6 @@ class Ingredient(models.Model):
 class IngredientList(models.Model):
     recipe = models.ForeignKey(Recipe)
     ingredient = models.ForeignKey(Ingredient)
-    quantaty = models.CharField(max_length=50)  # sp: quantity
+    quantity = models.CharField(max_length=50)
     units = models.CharField(max_length=50, blank=True)	
 
