@@ -8,9 +8,5 @@ function convert(input, factor){
 }
 
 function formatOutput(input, units) {
-    //var output = "";
-    //if (input.denominator == 1) { output = input.numerator; }
-    //else { output = input.toString();}
-    //return output + " " + units;
     return input.toLocaleString() + " " + units;
 }
