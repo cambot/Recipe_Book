@@ -1,4 +1,7 @@
 Main:
+- Data model:
+  - add discrete field for units
+
 ~ build templates:
   ~ source listing
 	- add source

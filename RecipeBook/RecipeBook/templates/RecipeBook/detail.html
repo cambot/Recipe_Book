@@ -1,5 +1,28 @@
-</html>
+<html>
+
+<script src="{{ STATIC_URL }}/ratio/lib/Ratio.js"></script>
+<script src="{{ STATIC_URL }}recipeSupport.js"></script>
+<script>
+
+function compute(){
+    var myTable=document.getElementById('ingredients').rows;
+    var source;
+    var newNum;
+    var scale=document.getElementById('scale').options;
+    var factorIndex=document.getElementById('scale').selectedIndex;
+    var factor = scale[factorIndex].text;
+    for (var row=1; row < myTable.length; row++) {
+        source=myTable[row].cells[1].innerHTML;
+        newNum=convert(source,factor);
+        myTable[row].cells[3].innerHTML=formatOutput(newNum,"");
+    }
+}
+
+</script>
+
+
 <link rel="stylesheet" href="{{ STATIC_URL }}rbook.css" type="text/css">
+
 <!--  not sure how to reference image from within *.css file --!>
 <style>
   body { background-image: url({{ STATIC_URL }}FeatherTexture.bmp) }
@@ -16,11 +39,38 @@
 <p class="notes"> {{ recipe.notes }} </p>
 
 <h3>Ingredient list</h3>
+
+<form method="post" name="conversionTable">
+
 <ul>
 {% for ingredientListItem in recipe.ingredientlist_set.all %}  {# table_set forced to lower case? #}
-    <li> {{ ingredientListItem.ingredient.name }}: {{ ingredientListItem.quantaty }}</li>
+    <li> {{ ingredientListItem.ingredient.name }}: {{ ingredientListItem.quantaty }} {{ ingredientListItem.units }} </li>
 {% endfor %}
 </ul>
+
+<table id="ingredients" border=1>
+ <tr> <th> Ingredient </th><th colspan=2> Quantity </th> <th colspan=2> Rescaled</th> </tr>
+{% for ingredientListItem in recipe.ingredientlist_set.all %}
+ <tr> <td> {{ ingredientListItem.ingredient.name }} </td>
+      <td> {{ ingredientListItem.quantaty }} </td>
+      <td> {{ ingredientListItem.units }} </td>
+      <td> {{ ingredientListItem.quantaty }} </td>
+      <td> {{ ingredientListItem.units }} </td>
+ </tr>
+{% endfor %}
+</table>
+
+Scale:
+<select id="scale" onchange="compute()">
+<option value="3">3</option>
+<option value="2">2</option>
+<option value="1" selected="selected">1</option>
+<option value="1/2">1/2</option>
+<option value="1/3">1/3</option>
+</select>
+
+
+</form>
 
 </body>
 </html>

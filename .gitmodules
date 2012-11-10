@@ -1,0 +1,3 @@
+[submodule "RecipeBook/RecipeBook/static/ratio"]
+	path = RecipeBook/RecipeBook/static/ratio
+	url = https://github.com/LarryBattle/Ratio.js.git
